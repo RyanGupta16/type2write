@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - type2write</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .signin-container {
+            max-width: 400px;
+            margin: 5rem auto 0 auto;
+            background: #fffbe7;
+            border-radius: 1.2rem;
+            box-shadow: 0 2px 16px rgba(191,167,106,0.08);
+            padding: 2.5rem 2rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .signin-container h2 {
+            font-size: 2rem;
+            color: #bfa76a;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+        .signin-container input {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.2rem;
+            border-radius: 0.5rem;
+            border: 1.5px solid #bfa76a;
+            font-size: 1rem;
+        }
+        .signin-container button {
+            width: 100%;
+            background: linear-gradient(90deg, #bfa76a 60%, #ffd700 100%);
+            color: #18120b;
+            border: none;
+            border-radius: 2rem;
+            padding: 0.9rem 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(191,167,106,0.13);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .signin-container button:hover {
+            background: linear-gradient(90deg, #ffd700 60%, #bfa76a 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        .signin-container .signup-link {
+            margin-top: 1.2rem;
+            font-size: 1rem;
+        }
+        .signin-container .signup-link a {
+            color: #bfa76a;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Sign in to your account</h2>
+        <form id="signinForm" autocomplete="off">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('signinForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Signed in! (Demo only)');
+        };
+    </script>
+</body>
+</html>

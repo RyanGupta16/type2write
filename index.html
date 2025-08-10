@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type2write</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-logo">type2write</div>
+    <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#converter">Try Now</a></li>
+    </ul>
+    <div class="nav-auth">
+        <a href="signup.html" class="nav-cta">Sign Up</a>
+        <a href="signin.html" class="nav-cta nav-signin">Sign In</a>
+    </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Make Your Typed Text Look <span class="handwritten-highlight">Handwritten</span></h1>
+            <p>Transform digital text into realistic, human-like handwriting for notes, assignments, and more. Simple, fast, and beautiful.</p>
+            <a href="#converter" class="hero-btn">Try It Free</a>
+        </div>
+    </header>
+    <main>
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="features-list">
+                <div class="feature">
+                    <h3>Realistic Handwriting</h3>
+                    <p>Advanced AI-powered rendering for authentic, human-like strokes and randomness.</p>
+                </div>
+                <div class="feature">
+                    <h3>Multiple Styles</h3>
+                    <p>Choose from 6+ unique handwriting styles and ink colors to match your needs.</p>
+                </div>
+                <div class="feature">
+                    <h3>Ruled A4 Output</h3>
+                    <p>Perfectly formatted for Classmate register A4 paper, with blue ruled lines and margin.</p>
+                </div>
+                <div class="feature">
+                    <h3>Download & Print</h3>
+                    <p>Export your handwritten text as high-quality images for easy printing or sharing.</p>
+                </div>
+                <div class="feature">
+                    <h3>Watermark Option</h3>
+                    <p>Subtle watermark for authenticity and copyright protection.</p>
+                </div>
+                <div class="feature">
+                    <h3>Mobile Friendly</h3>
+                    <p>Fully responsive and works beautifully on all devices.</p>
+                </div>
+                <div class="feature">
+                    <h3>Instant Preview</h3>
+                    <p>See your handwritten output instantly as you type or paste text.</p>
+                </div>
+                <div class="feature">
+                    <h3>Apple-Inspired Design</h3>
+                    <p>Minimal, elegant, and modern interface inspired by Apple.com for a premium experience.</p>
+                </div>
+            </div>
+        </section>
+        <section id="plans" class="plans">
+            <h2>Plans & Pricing</h2>
+            <div class="plans-list">
+                <div class="plan plan-free">
+                    <h3>Free</h3>
+                    <p>Basic handwriting conversion<br>Limited styles<br>Watermark</p>
+                    <div class="plan-price">$0</div>
+                    <button class="plan-btn">Get Started</button>
+                </div>
+                <div class="plan plan-premium">
+                    <h3>Premium</h3>
+                    <p>All Free features<br>More handwriting styles<br>No watermark<br>Download as image</p>
+                    <div class="plan-price">$4.99/mo</div>
+                    <button class="plan-btn">Upgrade</button>
+                </div>
+                <div class="plan plan-pro">
+                    <h3>Pro</h3>
+                    <p>All Premium features<br>PDF export<br>Priority support<br>Commercial use</p>
+                    <div class="plan-price">$9.99/mo</div>
+                    <button class="plan-btn">Go Pro</button>
+                </div>
+            </div>
+        </section>
+        <section id="converter" class="converter">
+            <h2>Try the Converter</h2>
+            <textarea id="typedText" placeholder="Type or paste your text here..."></textarea>
+            <div class="controls">
+                <label for="styleSelect">Style:</label>
+                <select id="styleSelect">
+                    <option value="human1">Human 1</option>
+                    <option value="human2">Human 2</option>
+                    <option value="human3">Human 3</option>
+                    <option value="human4">Human 4</option>
+                    <option value="human5">Human 5</option>
+                    <option value="human6">Human 6</option>
+                </select>
+                <label for="colorSelect">Ink:</label>
+                <select id="colorSelect">
+                    <option value="#3b2f1c">Black</option>
+                    <option value="#1a237e">Blue</option>
+                    <option value="#b71c1c">Red</option>
+                </select>
+                <button id="convertBtn">Convert to Handwritten</button>
+                <button id="downloadBtn">Download</button>
+            </div>
+            <div class="handwritten-container">
+                <canvas id="handwrittenCanvas"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#features">Features</a>
+            <a href="#plans">Plans</a>
+            <a href="#converter">Try Now</a>
+        </div>
+        <p>&copy; 2025 Typed2Handwritten. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
