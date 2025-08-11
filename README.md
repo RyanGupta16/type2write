@@ -1,6 +1,6 @@
 # type2write
 
-A modern, Apple-inspired web app that converts typed text into realistic, human-like handwriting on ruled paper. Built with HTML, CSS, and JavaScript. Responsive, minimal, and ready for Vercel deployment.
+A modern, website that converts typed text into realistic, human-like handwriting on ruled paper. Built with HTML, CSS, and JavaScript. Responsive, minimal, and ready for Vercel deployment.
 
 ## Features
 - **Handwriting Converter:** Instantly turn typed text into handwritten output on A4/ruled paper.
@@ -32,16 +32,4 @@ writeapp/
 4. Use the Sign Up/Sign In pages for demo authentication (no backend).
 5. Chatbot is available on the main page for instant help.
 
-## Deployment (Vercel)
-1. Push this folder to a GitHub/GitLab/Bitbucket repository.
-2. Go to [vercel.com](https://vercel.com), sign in, and import your repo.
-3. No build command is needed. Set the output/public directory to the root (or leave blank).
-4. Click "Deploy". Your site will be live on a vercel.app URL.
 
-## Customization
-- To change handwriting styles, edit the `script.js` file.
-- To update branding, edit `index.html` and `style.css`.
-- To add more features, simply extend the HTML/CSS/JS files.
-
-## License
-This project is for educational and personal use. For commercial use, please contact the author.
